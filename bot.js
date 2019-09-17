@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "$"
-var adminprefix = '$'
+var prefix = "#"
+var adminprefix = '#'
 
 
 
@@ -41,13 +41,13 @@ client.on('ready',  () => {
 
 
   client.on('message', msg => {
-    if(msg.content === '$help')
+    if(msg.content === '#help')
     msg.reply('Check Your DM :white_check_mark:')
   });
   
   
   client.on("message", message => {
-    if (message.content === "$help") {
+    if (message.content === "#help") {
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
